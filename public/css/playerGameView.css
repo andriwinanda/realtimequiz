@@ -1,0 +1,70 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ececec;
+    height: 100%;
+}
+
+button {
+    width: 47.3%;
+    min-height: 100px;
+    float: left;
+    color: white;
+    font-size: 15pt;
+    border: none;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34, 36, 38, .12), 0 2px 10px 0 rgba(34, 36, 38, .15);
+}
+
+#answer1 {
+    background-color: #29ce2f;
+}
+
+#answer2 {
+    background-color: #ff472e;
+}
+
+#answer3 {
+    background-color: #31a2ff;
+}
+
+#answer4 {
+    background-color: #ff8533;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#nameText,
+#scoreText {
+    margin: 0;
+    color: white;
+    padding: 0px 10px;
+}
+
+#message {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#question {
+    padding: 15px;
+    text-align: center;
+}
+
+.answerButton {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    outline: none;
+}
+
+#stats {
+    width: 100%;
+    background-color: #00000034;
+    padding: 15px 0;
+}

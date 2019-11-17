@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="../../css/hostGameView.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="../../js/print.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/print.min.css">
+
+</head>
+
+<body>
+    <button onclick="nextQuestion()" id="nextQButton">Next Question</button>
+    <h3 id="timerText">Time Left:<span id="num"> 20</span></h3>
+
+    <!-- 
+    <div class="square" id="square1"></div>
+    <div class="square" id="square2"></div>
+    <div class="square" id="square3"></div>
+    <div class="square" id="square4"></div> -->
+    <p id="questionNum">Question 1 / x</p>
+    <div class="box" id="questionBox">
+        <h2 id="question">Question</h2>
+    </div>
+    <p id="playersAnswered">Players Answered: 0 / x</p>
+    <h2 style="text-align: center; display: none;" id="finish">Quiz Finish!!</h2>
+    <div class="fileToExport box" id="fileToExport" style="display: none;">
+        <table id="winner" class="score"></table>
+    </div>
+    <br/>
+    <button id="printButton" style="margin: 0 auto; display: none;" onclick="printJS({printable: 'winner', type: 'html', header: null, targetStyles: ['*']})">Print PDF</button>
+    <br/>
+    <div class="answerButton">
+        <button class="answer" id="answer1">Answer</button>
+        <button class="answer" id="answer2">Answer</button>
+        <button class="answer" id="answer3">Answer</button>
+        <button class="answer" id="answer4">Answer</button>
+    </div>
+
+
+
+    <script>
+        function printPdf() {
+            alert("I am an alert box!");
+        }
+    </script>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/hostGame.js"></script>
+</body>
+<style>
+    .fileToExport {
+        width: 21cm !important;
+        padding: 1cm;
+        margin: 0 auto;
+    }
+    
+    table.score {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    table.score th {
+        border: 1px solid black;
+        font-size: 1.05em;
+        font-weight: bold;
+        padding: 3px 15px;
+        text-align: center;
+    }
+    
+    table.score td {
+        border: 1px solid black;
+        font-size: 1.05em;
+        font-weight: normal;
+        padding: 3px 15px;
+        text-align: center;
+    }
+</style>
+
+</html>

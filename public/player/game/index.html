@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="../../css/playerGameView.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="stats">
+        <p id="nameText">Name: </p>
+        <p id="scoreText">Score: </p>
+    </div>
+    <div class="box" id="questionBox">
+        <h2 id="question">Question</h2>
+    </div>
+    <h2 id="message" style="margin: 0"></h2>
+    <h1 id="finalScore" style="margin: 0"></h1>
+    <div class="answerButton">
+        <button onclick="answerSubmitted(1)" id="answer1" class="button"></button>
+        <button onclick="answerSubmitted(2)" id="answer2" class="button"></button>
+        <br>
+        <button onclick="answerSubmitted(3)" id="answer3" class="button"></button>
+        <button onclick="answerSubmitted(4)" id="answer4" class="button"></button>
+    </div>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/playerGame.js"></script>
+</body>
+
+</html>
