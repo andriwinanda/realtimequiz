@@ -78,6 +78,10 @@ body {
     display: none;
     margin-left: auto;
 }
+#homeButton {
+    display: none;
+    margin-left: auto;
+}
 
 #questionBox {
     padding: 10px 20px;

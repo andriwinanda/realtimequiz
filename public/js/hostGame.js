@@ -19,10 +19,10 @@ socket.on('noGameFound', function() {
 
 socket.on('gameQuestions', function(data) {
     document.getElementById('question').innerHTML = data.q1;
-    document.getElementById('answer1').innerHTML = data.a1;
-    document.getElementById('answer2').innerHTML = data.a2;
-    document.getElementById('answer3').innerHTML = data.a3;
-    document.getElementById('answer4').innerHTML = data.a4;
+    document.getElementById('answer1').innerHTML = "A. "+data.a1;
+    document.getElementById('answer2').innerHTML = "B. "+data.a2;
+    document.getElementById('answer3').innerHTML = "C. "+data.a3;
+    document.getElementById('answer4').innerHTML = "D. "+data.a4;
     var correctAnswer = data.correct;
     document.getElementById('playersAnswered').innerHTML = "Players Answered 0 / " + data.playersInGame;
     updateTimer();
@@ -147,6 +147,8 @@ socket.on('GameOver', function(data) {
     // document.getElementById('question').innerHTML = "Quiz Finish!!";
     document.getElementById('finish').style.display = "block";
     document.getElementById('fileToExport').style.display = "block";
+    document.getElementById('homeButton').style.display = "inline-block";
+    document.getElementById('questionNum').style.display = "none";
     document.getElementById('printButton').style.display = "block";
     document.getElementById('playersAnswered').innerHTML = "";
 

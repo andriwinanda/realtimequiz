@@ -137,5 +137,5 @@ function randomColor() {
 
 function setBGColor() {
     var randColor = randomColor();
-    document.getElementById('question-field').style.backgroundColor = randColor;
+    document.getElementById('question-field').style.backgroundColor = "#45a3e5"
 }

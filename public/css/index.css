@@ -19,12 +19,28 @@
         background-color: #864cbf
     }
 }
-
+@-webkit-keyframes AnimationName {
+    0%{background-position:83% 0%}
+    50%{background-position:18% 100%}
+    100%{background-position:83% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:83% 0%}
+    50%{background-position:18% 100%}
+    100%{background-position:83% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:83% 0%}
+    50%{background-position:18% 100%}
+    100%{background-position:83% 0%}
+}
 body {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    min-height: 100vh;
+    background: linear-gradient(217deg, #00ff88, #4199d5, #a641d5, #ff1900);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
     font-family: Arial, Helvetica, sans-serif;
 }
 #title{
@@ -40,7 +56,8 @@ body {
     margin: 8px 0;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
+    outline: none;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
@@ -53,7 +70,8 @@ body {
     margin: 8px 0;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
+    outline: none;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
@@ -81,7 +99,8 @@ body {
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
+    outline: none;
     cursor: pointer;
     display: block;
     margin-right: auto;

@@ -13,17 +13,17 @@
         <p id="nameText">Name: </p>
         <p id="scoreText">Score: </p>
     </div>
-    <div class="box" id="questionBox">
+    <!-- <div class="box" id="questionBox">
         <h2 id="question">Question</h2>
-    </div>
+    </div> -->
     <h2 id="message" style="margin: 0"></h2>
     <h1 id="finalScore" style="margin: 0"></h1>
     <div class="answerButton">
-        <button onclick="answerSubmitted(1)" id="answer1" class="button"></button>
-        <button onclick="answerSubmitted(2)" id="answer2" class="button"></button>
+        <button onclick="answerSubmitted(1)" id="answer1" class="button"><b>A</b></button>
+        <button onclick="answerSubmitted(2)" id="answer2" class="button"><b>B</b></button>
         <br>
-        <button onclick="answerSubmitted(3)" id="answer3" class="button"></button>
-        <button onclick="answerSubmitted(4)" id="answer4" class="button"></button>
+        <button onclick="answerSubmitted(3)" id="answer3" class="button"><b>C</b></button>
+        <button onclick="answerSubmitted(4)" id="answer4" class="button"><b>D</b></button>
     </div>
     <script src="../../socket.io/socket.io.js"></script>
     <script src="../../js/libs/jqueryLibrary.js"></script>

@@ -53,7 +53,8 @@ label {
     margin: 2px 0;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
+    outline: none;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
