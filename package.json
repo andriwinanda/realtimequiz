@@ -14,7 +14,7 @@
     "mongodb": "^3.0.10",
     "mongoose": "^5.1.5",
     "print-js": "^1.0.63",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {
     "expect": "^23.0.1"
